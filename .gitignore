@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+**/.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# utility locali, non fanno parte del sito
+anteprima-sito.command
+
+# editor
+.vscode/
+.idea/
+*.swp
