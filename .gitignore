@@ -12,3 +12,18 @@ anteprima-sito.command
 .vscode/
 .idea/
 *.swp
+
+# Maronehats - File esclusi dal versionamento
+generate-json.php
+generate-store-list.php
+mail-retailer.php
+
+# JSON locali e generati
+ramar.json
+store-list-sample.json
+store-list-src.json
+store-list.json
+__idea.json
+idea.json
+# archivi di scambio
+*.zip

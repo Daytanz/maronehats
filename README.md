@@ -27,7 +27,7 @@ PHP non serve, tranne che per i due form (vedi "Da completare").
 | `uomo/ donna/ campagna-ss26/ brand/ storia/ manifattura/ modelli-icona/ rivenditori/ …` | pagine italiane |
 | `en/ fr/ de/ es/ ja/` | le stesse pagine nelle altre 5 lingue |
 | `css/marone.css` | foglio di stile unico |
-| `js/marone.js` | interazioni generali (header, menu, selettore lingua, store locator) |
+| `js/marone.js` | interazioni generali (header, menu, selettore lingua) + store locator AJAX |
 | `js/slides.js` | scroll a slide della homepage |
 | `fonts/` | font self-hosted in woff2 |
 | `img/` | immagini responsive in AVIF / WebP / JPEG |
@@ -62,7 +62,7 @@ Ogni pagina ha canonical assoluto e `hreflang` per tutte e 6 le lingue più `x-d
 1. **`newsletter.php` non esiste.** Il form newsletter in homepage punta a `/newsletter.php`: senza quel file restituisce 404. Va creato oppure va cambiata l'`action` del form.
 2. **Google Analytics 4 (`G-V67DJW9LSF`) e banner cookie** — rimossi da questa versione, vanno reinseriti **insieme** prima del lancio.
 3. **Dati tecnici delle 18 schede prodotto** — in attesa del catalogo del cliente.
-4. **Store locator** — contiene 3 negozi segnaposto.
+4. **Store locator** — la lista dei negozi **non è nel repository**: le pagine `store-locator/` leggono via AJAX il file `store-list.json` alla radice del sito, generato sul server dagli script PHP (`generate-store-list.php`, `generate-json.php`), anch'essi esclusi dal versionamento. La geolocalizzazione della città usa Nominatim (OpenStreetMap). In locale, senza `store-list.json`, la ricerca non restituisce risultati: è normale.
 5. **Pagine legali spagnole** — sul sito attuale contengono testo inglese, da tradurre.
 
 ---
