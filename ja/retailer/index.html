@@ -49,12 +49,6 @@
           <path d="M3 6.4l9 6.4 9-6.4"/>
         </svg>
       </a>
-      <a class="ico" href="../../ja/login/index.html" aria-label="ログイン" title="ログイン">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="8" r="3.9"/>
-          <path d="M4.4 20.2c.8-4 3.9-6.1 7.6-6.1s6.8 2.1 7.6 6.1"/>
-        </svg>
-      </a>
       <div class="lang" data-open="false">
         <button class="lang__btn label" type="button" aria-expanded="false" aria-haspopup="true">JA</button>
         <div class="lang__list label">          <a href="../../diventa-rivenditore/index.html" lang="it">Italiano</a>          <a href="../../en/become-a-retailer/index.html" lang="en">English</a>          <a href="../../fr/devenir-revendeur/index.html" lang="fr">Français</a>          <a href="../../de/retailer/index.html" lang="de">Deutsch</a>          <a href="../../es/hazte-distribuidor/index.html" lang="es">Español</a>          <a href="../../ja/retailer/index.html" lang="ja" aria-current="true">日本語</a>        </div>
@@ -67,11 +61,11 @@
     <a href="../../ja/women/index.html">WOMEN</a>
     <a href="../../ja/ss26-campaign/index.html">SS26 キャンペーン</a>
     <a href="../../ja/brand/index.html">MARONE WORLD</a>
-    <a href="../../ja/store-locator/index.html">取扱店</a>
+    <a href="../../ja/store-locator/index.html">ストアロケーター</a>
+    <a href="../../ja/login/index.html">B2B / コレクション</a>
     <a class="only-m" href="../../ja/retailer/index.html">取扱店になる</a>
     <a class="only-m" href="../../ja/media/index.html">メディア</a>
     <a class="only-m" href="../../ja/contact/index.html">お問い合わせ</a>
-    <a class="only-m" href="../../ja/login/index.html">ログイン</a>
     </nav>
   </div>
 </header>
@@ -80,27 +74,15 @@
   <ol>    <li><a class="u-link" href="../../ja/index.html">ホーム</a></li>    <li><span aria-current="page">取扱店になる</span></li>  </ol>
 </nav>
 <main id="main">
-<section class="sect" style="padding-top:clamp(56px,9vh,120px)">
-  <div class="wrap stack js-reveal">
-    <h1 class="d-xl it">取扱店になる</h1>
-    <div class="read center prose"><p>プーリアで企画から製造まで一貫して手がけ、上質な素材と仕立てのような細部への配慮でつくられた帽子とキャップを、あなたの店舗へ。お客様に合わせた協業のかたちを一緒につくります。取扱店プログラムへの参加方法をご確認ください。</p></div>
-    <p class="label" style="margin-top:18px">メール</p>
-    <p class="d-m"><a class="u-link" href="mailto:info@maronehats.it">info@maronehats.it</a></p>
-    <div class="read center prose"><p>お申し込みはこちら</p></div>
-    <p class="label" style="margin-top:18px">受付時間</p>
-    <div class="read center prose"><p>月曜〜金曜 8:00-18:00<br>（ローマ時間）</p></div>
-  </div>
-</section>
-
-<section class="panel" id="retailer" data-panel="取扱店になる">
+<section class="panel panel--short" data-panel="取扱店になる">
   <div class="panel__sticky">
     <div class="panel__media"><picture>  <source type="image/webp" srcset="../../img/rivenditore-cta-480.webp 480w, ../../img/rivenditore-cta-768.webp 768w, ../../img/rivenditore-cta-1080.webp 1080w, ../../img/rivenditore-cta-1440.webp 1440w, ../../img/rivenditore-cta-1920.webp 1920w" sizes="100vw">
   <img src="../../img/rivenditore-cta-1080.webp" srcset="../../img/rivenditore-cta-768.jpg 768w, ../../img/rivenditore-cta-1440.jpg 1440w" sizes="100vw"
        alt="羽根飾りの付いたマローネのフェルトハット" width="12500" height="4284"
-style="--pos:50% 55%"loading="lazy" decoding="async">
+style="--pos:50% 55%"fetchpriority="high" decoding="async">
 </picture></div>
     <div class="panel__content">
-      <h2 class="d-xl it">取扱店になる</h2>
+      <h1 class="d-xl it">取扱店になる</h1>
       <p class="label label-lg">お申し込みはこちら</p>
     </div>
   </div>
@@ -111,27 +93,53 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <div class="sect__head js-reveal">
       <h2 class="d-m">マローネの帽子とともに、イタリアの職人の卓越した世界へ。</h2>
     </div>
-    <div class="read-wide center prose js-reveal js-reveal--d1" style="margin-bottom:clamp(34px,5vw,64px)">
+    <div class="read-wide center prose js-reveal js-reveal--d1">
       <p>プーリアで企画から製造まで一貫して手がけ、上質な素材と仕立てのような細部への配慮でつくられた帽子とキャップを、あなたの店舗へ。お客様に合わせた協業のかたちを一緒につくります。取扱店プログラムへの参加方法をご確認ください。</p>
     </div>
+  </div>
+</section>
 
-    <form class="form js-reveal js-reveal--d2" action="/mail-retailer.php" method="post">
-      <input type="hidden" name="lang" value="ja">
-      <p style="display:none" aria-hidden="true"><label>空欄のまま<input name="website" tabindex="-1" autocomplete="off"></label></p>      <div class="field">
-        <label for="f-nome">名 *</label>        <input id="f-nome" name="nome" type="text" required autocomplete="given-name">      </div>      <div class="field">
-        <label for="f-indirizzo">住所（番地・郵便番号・市区町村） *</label>        <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">      </div>      <div class="field">
-        <label for="f-cognome">姓 *</label>        <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">      </div>      <div class="field">
-        <label for="f-paese">国 *</label>        <input id="f-paese" name="paese" type="text" required autocomplete="country-name">      </div>      <div class="field">
-        <label for="f-email">メール *</label>        <input id="f-email" name="email" type="email" required autocomplete="email">      </div>      <div class="field">
-        <label for="f-negozio">店舗名 *</label>        <input id="f-negozio" name="negozio" type="text" required autocomplete="organization">      </div>      <div class="field">
-        <label for="f-telefono">電話番号</label>        <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">      </div>      <div class="field">
-        <label for="f-tipo">店舗の種類 *</label>        <select id="f-tipo" name="tipo" required>
-          <option value="">選択してください</option><option value="帽子専門店">帽子専門店</option><option value="ブティック">ブティック</option><option value="百貨店">百貨店</option><option value="コンセプトストア">コンセプトストア</option><option value="Eコマース">Eコマース</option><option value="その他">その他</option>        </select>      </div>      <label class="consent">
-        <input type="checkbox" name="privacy" required>
-        <span> <a class="u-link" href="../../ja/privacy-policy/index.html">プライバシーポリシー</a> を読み、個人データの取り扱いに同意します。</span>
-      </label>
-      <div class="form__submit"><button class="btn" type="submit">送信する</button></div>
-    </form>
+<section class="sect--tight ret">
+  <div class="wrap ret__grid">
+    <aside class="ret__aside js-reveal">
+      <p class="label">マローネを選ぶ理由</p>
+      <ol class="why">        <li>
+          <h3 class="d-s">プーリアの手仕事</h3>
+          <p>すべての帽子はフォッジャの工房で、厳選した素材と1881年から受け継がれる手作業によって生まれます。</p>
+        </li>        <li>
+          <h3 class="d-s">お店に合わせたコレクション</h3>
+          <p>メンズ・レディース、ストロー、ファブリック、フェルト。お客様に合った品揃えを一緒に組み立てます。</p>
+        </li>        <li>
+          <h3 class="d-s">専任の担当者</h3>
+          <p>最初のご連絡から納品まで、ひとりの担当者がパートナーシップの各段階をサポートします。</p>
+        </li>      </ol>
+      <div class="ret__contact">
+        <p class="label">メールをご希望ですか？</p>
+        <p><a class="u-link" href="mailto:info@maronehats.it">info@maronehats.it</a></p>
+        <p class="label" style="margin-top:14px">受付時間</p>
+        <p>月曜〜金曜 8:00-18:00<br>（ローマ時間）</p>
+      </div>
+    </aside>
+
+    <div class="ret__form js-reveal js-reveal--d1">
+      <p class="label ret__kicker">お申し込みフォーム</p>
+      <form class="form form--card" action="/mail-retailer.php" method="post">
+        <input type="hidden" name="lang" value="ja">
+        <p style="display:none" aria-hidden="true"><label>空欄のまま<input name="website_url" tabindex="-1" autocomplete="off"></label></p>        <div class="field">
+          <label for="f-nome">名 *</label>          <input id="f-nome" name="nome" type="text" required autocomplete="given-name">        </div>        <div class="field">
+          <label for="f-indirizzo">住所（番地、郵便番号、市区町村、国） *</label>          <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">        </div>        <div class="field">
+          <label for="f-cognome">姓 *</label>          <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">        </div>        <div class="field">
+          <label for="f-email">メール *</label>          <input id="f-email" name="email" type="email" required autocomplete="email">        </div>        <div class="field">
+          <label for="f-nome_negozio">店舗名 *</label>          <input id="f-nome_negozio" name="nome_negozio" type="text" required autocomplete="organization">        </div>        <div class="field">
+          <label for="f-telefono">電話番号 *</label>          <input id="f-telefono" name="telefono" type="tel" required autocomplete="tel">        </div>        <div class="field">
+          <label for="f-tipo_negozio">店舗の種類 *</label>          <select id="f-tipo_negozio" name="tipo_negozio" required>
+            <option value="">選択してください</option><option value="帽子専門店">帽子専門店</option><option value="ブティック">ブティック</option><option value="百貨店">百貨店</option><option value="コンセプトストア">コンセプトストア</option><option value="Eコマース">Eコマース</option><option value="その他">その他</option>          </select>        </div>        <label class="consent">
+          <input type="checkbox" name="privacy" required>
+          <span> <a class="u-link" href="../../ja/privacy-policy/index.html">プライバシーポリシー</a> を読み、個人データの取り扱いに同意します。</span>
+        </label>
+        <div class="form__submit"><button class="btn" type="submit">送信する</button></div>
+      </form>
+    </div>
   </div>
 </section>
 </main>
@@ -147,7 +155,7 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <a href="../../ja/women/index.html">WOMEN</a>
     <a href="../../ja/ss26-campaign/index.html">SS26 キャンペーン</a>
     <a href="../../ja/brand/index.html">MARONE WORLD</a>
-    <a href="../../ja/store-locator/index.html">取扱店</a>
+    <a href="../../ja/store-locator/index.html">ストアロケーター</a>
     <a href="../../ja/media/index.html">メディア</a>
     <a href="../../ja/retailer/index.html">取扱店になる</a>
     <a href="../../ja/contact/index.html">お問い合わせ</a>

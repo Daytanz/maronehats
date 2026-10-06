@@ -49,12 +49,6 @@
           <path d="M3 6.4l9 6.4 9-6.4"/>
         </svg>
       </a>
-      <a class="ico" href="../../ja/login/index.html" aria-label="ログイン" title="ログイン">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="8" r="3.9"/>
-          <path d="M4.4 20.2c.8-4 3.9-6.1 7.6-6.1s6.8 2.1 7.6 6.1"/>
-        </svg>
-      </a>
       <div class="lang" data-open="false">
         <button class="lang__btn label" type="button" aria-expanded="false" aria-haspopup="true">JA</button>
         <div class="lang__list label">          <a href="../../contatti/index.html" lang="it">Italiano</a>          <a href="../../en/contact/index.html" lang="en">English</a>          <a href="../../fr/contact/index.html" lang="fr">Français</a>          <a href="../../de/contact/index.html" lang="de">Deutsch</a>          <a href="../../es/contacto/index.html" lang="es">Español</a>          <a href="../../ja/contact/index.html" lang="ja" aria-current="true">日本語</a>        </div>
@@ -67,11 +61,11 @@
     <a href="../../ja/women/index.html">WOMEN</a>
     <a href="../../ja/ss26-campaign/index.html">SS26 キャンペーン</a>
     <a href="../../ja/brand/index.html">MARONE WORLD</a>
-    <a href="../../ja/store-locator/index.html">取扱店</a>
+    <a href="../../ja/store-locator/index.html">ストアロケーター</a>
+    <a href="../../ja/login/index.html">B2B / コレクション</a>
     <a class="only-m" href="../../ja/retailer/index.html">取扱店になる</a>
     <a class="only-m" href="../../ja/media/index.html">メディア</a>
     <a class="only-m" href="../../ja/contact/index.html">お問い合わせ</a>
-    <a class="only-m" href="../../ja/login/index.html">ログイン</a>
     </nav>
   </div>
 </header>
@@ -117,15 +111,14 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
 
     <form class="form js-reveal js-reveal--d2" action="/mail-retailer.php" method="post">
       <input type="hidden" name="lang" value="ja">
-      <p style="display:none" aria-hidden="true"><label>空欄のまま<input name="website" tabindex="-1" autocomplete="off"></label></p>      <div class="field">
+      <p style="display:none" aria-hidden="true"><label>空欄のまま<input name="website_url" tabindex="-1" autocomplete="off"></label></p>      <div class="field">
         <label for="f-nome">名 *</label>        <input id="f-nome" name="nome" type="text" required autocomplete="given-name">      </div>      <div class="field">
-        <label for="f-indirizzo">住所（番地・郵便番号・市区町村） *</label>        <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">      </div>      <div class="field">
+        <label for="f-indirizzo">住所（番地、郵便番号、市区町村、国） *</label>        <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">      </div>      <div class="field">
         <label for="f-cognome">姓 *</label>        <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">      </div>      <div class="field">
-        <label for="f-paese">国 *</label>        <input id="f-paese" name="paese" type="text" required autocomplete="country-name">      </div>      <div class="field">
         <label for="f-email">メール *</label>        <input id="f-email" name="email" type="email" required autocomplete="email">      </div>      <div class="field">
-        <label for="f-negozio">店舗名 *</label>        <input id="f-negozio" name="negozio" type="text" required autocomplete="organization">      </div>      <div class="field">
-        <label for="f-telefono">電話番号</label>        <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">      </div>      <div class="field">
-        <label for="f-tipo">店舗の種類 *</label>        <select id="f-tipo" name="tipo" required>
+        <label for="f-nome_negozio">店舗名 *</label>        <input id="f-nome_negozio" name="nome_negozio" type="text" required autocomplete="organization">      </div>      <div class="field">
+        <label for="f-telefono">電話番号 *</label>        <input id="f-telefono" name="telefono" type="tel" required autocomplete="tel">      </div>      <div class="field">
+        <label for="f-tipo_negozio">店舗の種類 *</label>        <select id="f-tipo_negozio" name="tipo_negozio" required>
           <option value="">選択してください</option><option value="帽子専門店">帽子専門店</option><option value="ブティック">ブティック</option><option value="百貨店">百貨店</option><option value="コンセプトストア">コンセプトストア</option><option value="Eコマース">Eコマース</option><option value="その他">その他</option>        </select>      </div>      <label class="consent">
         <input type="checkbox" name="privacy" required>
         <span> <a class="u-link" href="../../ja/privacy-policy/index.html">プライバシーポリシー</a> を読み、個人データの取り扱いに同意します。</span>
@@ -147,7 +140,7 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <a href="../../ja/women/index.html">WOMEN</a>
     <a href="../../ja/ss26-campaign/index.html">SS26 キャンペーン</a>
     <a href="../../ja/brand/index.html">MARONE WORLD</a>
-    <a href="../../ja/store-locator/index.html">取扱店</a>
+    <a href="../../ja/store-locator/index.html">ストアロケーター</a>
     <a href="../../ja/media/index.html">メディア</a>
     <a href="../../ja/retailer/index.html">取扱店になる</a>
     <a href="../../ja/contact/index.html">お問い合わせ</a>

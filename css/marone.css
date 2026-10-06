@@ -123,8 +123,9 @@ ul,ol{list-style:none}
 .hd__logo{grid-area:logo;justify-self:center}
 .hd__logo img{width:clamp(126px,12.5vw,182px);height:auto}
 
-.hd__nav{grid-area:nav;display:flex;justify-content:center;
-  gap:clamp(18px,3.6vw,64px)}
+.hd__nav{grid-area:nav;display:flex;justify-content:center;flex-wrap:nowrap;white-space:nowrap;
+  gap:clamp(14px,2.6vw,52px)}
+@media (min-width:1025px) and (max-width:1200px){.hd__nav{gap:14px;font-size:10.5px;letter-spacing:.14em}}
 .hd__nav a{position:relative;padding-bottom:3px}
 .hd__nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
   background:currentColor;transform:scaleX(0);transform-origin:left;
@@ -534,4 +535,51 @@ body.nav-open .burger span:nth-child(3){bottom:7.5px;transform:rotate(-45deg)}
 @media (max-width:860px){
   #marone-world .panel__media::after{
     background:linear-gradient(180deg,rgba(0,0,0,.10) 0%,rgba(0,0,0,.42) 100%)}
+}
+
+/* ===================================================================== gallerie ordinate
+   Righe ad altezza uniforme: ogni immagine cresce in proporzione al proprio rapporto
+   d'aspetto (--r), quindi la riga si riempie esattamente e nessuna foto viene ritagliata. */
+.gal{display:grid;gap:clamp(14px,2vw,28px)}
+.gal__row{display:flex;gap:clamp(14px,2vw,28px);align-items:stretch}
+.gal__item{flex:var(--r,1) 1 0;min-width:0;margin:0;gap:10px}
+.gal__item img{width:100%;height:auto;aspect-ratio:var(--r,auto);object-fit:cover;display:block}
+.gal__row--solo{justify-content:center}
+.gal__row--solo .gal__item{flex:0 1 auto;width:min(100%,62%)}
+.gal__row--solo .gal__item--sq{width:min(100%,46%)}
+.gal__row--solo .gal__item--p{width:min(100%,38%)}
+@media (max-width:640px){
+  .gal__row{flex-wrap:wrap}
+  .gal__item{flex:1 1 100%}
+  .gal__item--p{flex:1 1 calc(50% - 8px)}
+  .gal__row--solo .gal__item,.gal__row--solo .gal__item--sq,.gal__row--solo .gal__item--p{width:100%}
+}
+
+/* ===================================================================== pannello basso
+   Hero più contenuto per le pagine di servizio (store locator, diventa rivenditore). */
+.panel--short .panel__sticky{height:clamp(320px,56svh,560px);position:relative}
+.panel--short{min-height:0;scroll-snap-align:none}
+.map img{max-width:960px}
+
+/* ===================================================================== diventa rivenditore */
+.ret__grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(32px,5vw,88px);align-items:start}
+.ret__aside{display:grid;gap:clamp(26px,3.4vw,44px);position:sticky;top:calc(var(--head-h) + 28px)}
+.why{list-style:none;margin:0;padding:0;display:grid;gap:clamp(18px,2.4vw,30px);counter-reset:why}
+.why li{position:relative;padding-left:52px;counter-increment:why;display:grid;gap:6px}
+.why li::before{content:counter(why,decimal-leading-zero);position:absolute;left:0;top:.2em;
+  font-family:var(--f-sans);font-size:12px;letter-spacing:.16em;color:var(--ink-mute)}
+.why li::after{content:"";position:absolute;left:0;top:1.9em;width:30px;height:1px;background:var(--line)}
+.why p{margin:0;color:var(--ink-soft)}
+.ret__contact{display:grid;gap:6px;padding-top:clamp(18px,2.4vw,30px);border-top:1px solid var(--line)}
+.ret__contact p{margin:0}
+.ret__kicker{margin:0 0 14px}
+.form--card{background:var(--band);padding:clamp(22px,3vw,44px)}
+.form--card .field input,.form--card .field select{background:#fff}
+.form--card .field input:focus,.form--card .field select:focus{background:#fff}
+.form--card .consent{justify-content:flex-start;text-align:left}
+.form--card .form__submit{justify-content:flex-start}
+@media (max-width:900px){
+  .ret__grid{grid-template-columns:1fr}
+  .ret__aside{position:static}
+  .ret__form{order:-1}
 }

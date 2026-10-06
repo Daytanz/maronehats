@@ -49,12 +49,6 @@
           <path d="M3 6.4l9 6.4 9-6.4"/>
         </svg>
       </a>
-      <a class="ico" href="../../en/login/index.html" aria-label="LOGIN" title="LOGIN">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="8" r="3.9"/>
-          <path d="M4.4 20.2c.8-4 3.9-6.1 7.6-6.1s6.8 2.1 7.6 6.1"/>
-        </svg>
-      </a>
       <div class="lang" data-open="false">
         <button class="lang__btn label" type="button" aria-expanded="false" aria-haspopup="true">EN</button>
         <div class="lang__list label">          <a href="../../diventa-rivenditore/index.html" lang="it">Italiano</a>          <a href="../../en/become-a-retailer/index.html" lang="en" aria-current="true">English</a>          <a href="../../fr/devenir-revendeur/index.html" lang="fr">Français</a>          <a href="../../de/retailer/index.html" lang="de">Deutsch</a>          <a href="../../es/hazte-distribuidor/index.html" lang="es">Español</a>          <a href="../../ja/retailer/index.html" lang="ja">日本語</a>        </div>
@@ -67,11 +61,11 @@
     <a href="../../en/women/index.html">WOMEN</a>
     <a href="../../en/ss26-campaign/index.html">SS26 CAMPAIGN</a>
     <a href="../../en/brand/index.html">MARONE WORLD</a>
-    <a href="../../en/store-locator/index.html">RETAILERS</a>
+    <a href="../../en/store-locator/index.html">STORE LOCATOR</a>
+    <a href="../../en/login/index.html">B2B / COLLECTIONS</a>
     <a class="only-m" href="../../en/become-a-retailer/index.html">BECOME A RETAILER</a>
     <a class="only-m" href="../../en/media/index.html">MEDIA</a>
     <a class="only-m" href="../../en/contact/index.html">CONTACT</a>
-    <a class="only-m" href="../../en/login/index.html">LOGIN</a>
     </nav>
   </div>
 </header>
@@ -80,27 +74,15 @@
   <ol>    <li><a class="u-link" href="../../en/index.html">Home</a></li>    <li><span aria-current="page">Become a retailer</span></li>  </ol>
 </nav>
 <main id="main">
-<section class="sect" style="padding-top:clamp(56px,9vh,120px)">
-  <div class="wrap stack js-reveal">
-    <h1 class="d-xl it">Become a retailer</h1>
-    <div class="read center prose"><p>Bring to your store hats and caps designed and made entirely in Apulia with fine materials and tailoring care for detail. Together we will build a partnership tailored to you. Find out now how to join the retailer programme.</p></div>
-    <p class="label" style="margin-top:18px">E-mail</p>
-    <p class="d-m"><a class="u-link" href="mailto:info@maronehats.it">info@maronehats.it</a></p>
-    <div class="read center prose"><p>SEND YOUR REQUEST</p></div>
-    <p class="label" style="margin-top:18px">CONTACT HOURS</p>
-    <div class="read center prose"><p>Monday to Friday, 08:00-18:00<br>(Rome time)</p></div>
-  </div>
-</section>
-
-<section class="panel" id="become-a-retailer" data-panel="Become a retailer">
+<section class="panel panel--short" data-panel="Become a retailer">
   <div class="panel__sticky">
     <div class="panel__media"><picture>  <source type="image/webp" srcset="../../img/rivenditore-cta-480.webp 480w, ../../img/rivenditore-cta-768.webp 768w, ../../img/rivenditore-cta-1080.webp 1080w, ../../img/rivenditore-cta-1440.webp 1440w, ../../img/rivenditore-cta-1920.webp 1920w" sizes="100vw">
   <img src="../../img/rivenditore-cta-1080.webp" srcset="../../img/rivenditore-cta-768.jpg 768w, ../../img/rivenditore-cta-1440.jpg 1440w" sizes="100vw"
        alt="Felt hat with feather from the Marone collection" width="12500" height="4284"
-style="--pos:50% 55%"loading="lazy" decoding="async">
+style="--pos:50% 55%"fetchpriority="high" decoding="async">
 </picture></div>
     <div class="panel__content">
-      <h2 class="d-xl it">Become a retailer</h2>
+      <h1 class="d-xl it">Become a retailer</h1>
       <p class="label label-lg">SEND YOUR REQUEST</p>
     </div>
   </div>
@@ -111,27 +93,53 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <div class="sect__head js-reveal">
       <h2 class="d-m">Step into the world of Italian artisan excellence with Marone hats.</h2>
     </div>
-    <div class="read-wide center prose js-reveal js-reveal--d1" style="margin-bottom:clamp(34px,5vw,64px)">
+    <div class="read-wide center prose js-reveal js-reveal--d1">
       <p>Bring to your store hats and caps designed and made entirely in Apulia with fine materials and tailoring care for detail. Together we will build a partnership tailored to you. Find out now how to join the retailer programme.</p>
     </div>
+  </div>
+</section>
 
-    <form class="form js-reveal js-reveal--d2" action="/mail-retailer.php" method="post">
-      <input type="hidden" name="lang" value="en">
-      <p style="display:none" aria-hidden="true"><label>Leave blank<input name="website" tabindex="-1" autocomplete="off"></label></p>      <div class="field">
-        <label for="f-nome">First name *</label>        <input id="f-nome" name="nome" type="text" required autocomplete="given-name">      </div>      <div class="field">
-        <label for="f-indirizzo">Address (street, no., postcode, city) *</label>        <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">      </div>      <div class="field">
-        <label for="f-cognome">Last name *</label>        <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">      </div>      <div class="field">
-        <label for="f-paese">Country *</label>        <input id="f-paese" name="paese" type="text" required autocomplete="country-name">      </div>      <div class="field">
-        <label for="f-email">E-mail *</label>        <input id="f-email" name="email" type="email" required autocomplete="email">      </div>      <div class="field">
-        <label for="f-negozio">Store name *</label>        <input id="f-negozio" name="negozio" type="text" required autocomplete="organization">      </div>      <div class="field">
-        <label for="f-telefono">Phone</label>        <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">      </div>      <div class="field">
-        <label for="f-tipo">Type of store *</label>        <select id="f-tipo" name="tipo" required>
-          <option value="">Select an option</option><option value="Hat shop">Hat shop</option><option value="Boutique">Boutique</option><option value="Department store">Department store</option><option value="Concept store">Concept store</option><option value="E-commerce">E-commerce</option><option value="Other">Other</option>        </select>      </div>      <label class="consent">
-        <input type="checkbox" name="privacy" required>
-        <span>I have read the <a class="u-link" href="../../en/privacy-policy/index.html">Privacy Policy</a> and consent to the processing of my personal data.</span>
-      </label>
-      <div class="form__submit"><button class="btn" type="submit">Send request</button></div>
-    </form>
+<section class="sect--tight ret">
+  <div class="wrap ret__grid">
+    <aside class="ret__aside js-reveal">
+      <p class="label">Why Marone</p>
+      <ol class="why">        <li>
+          <h3 class="d-s">Handmade in Apulia</h3>
+          <p>Every hat is made in our Foggia workshop, with selected materials and hand finishing passed down since 1881.</p>
+        </li>        <li>
+          <h3 class="d-s">Collections tailored to your store</h3>
+          <p>Men&#39;s and women&#39;s, straw, fabric and felt: together we build a range that fits your customers.</p>
+        </li>        <li>
+          <h3 class="d-s">A dedicated contact</h3>
+          <p>From first contact to deliveries, one person follows you through every stage of the partnership.</p>
+        </li>      </ol>
+      <div class="ret__contact">
+        <p class="label">PREFER TO WRITE TO US?</p>
+        <p><a class="u-link" href="mailto:info@maronehats.it">info@maronehats.it</a></p>
+        <p class="label" style="margin-top:14px">CONTACT HOURS</p>
+        <p>Monday to Friday, 08:00-18:00<br>(Rome time)</p>
+      </div>
+    </aside>
+
+    <div class="ret__form js-reveal js-reveal--d1">
+      <p class="label ret__kicker">REQUEST FORM</p>
+      <form class="form form--card" action="/mail-retailer.php" method="post">
+        <input type="hidden" name="lang" value="en">
+        <p style="display:none" aria-hidden="true"><label>Leave blank<input name="website_url" tabindex="-1" autocomplete="off"></label></p>        <div class="field">
+          <label for="f-nome">First name *</label>          <input id="f-nome" name="nome" type="text" required autocomplete="given-name">        </div>        <div class="field">
+          <label for="f-indirizzo">Full address (street, postcode, city, country) *</label>          <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">        </div>        <div class="field">
+          <label for="f-cognome">Last name *</label>          <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">        </div>        <div class="field">
+          <label for="f-email">E-mail *</label>          <input id="f-email" name="email" type="email" required autocomplete="email">        </div>        <div class="field">
+          <label for="f-nome_negozio">Store name *</label>          <input id="f-nome_negozio" name="nome_negozio" type="text" required autocomplete="organization">        </div>        <div class="field">
+          <label for="f-telefono">Phone *</label>          <input id="f-telefono" name="telefono" type="tel" required autocomplete="tel">        </div>        <div class="field">
+          <label for="f-tipo_negozio">Type of store *</label>          <select id="f-tipo_negozio" name="tipo_negozio" required>
+            <option value="">Select an option</option><option value="Hat shop">Hat shop</option><option value="Boutique">Boutique</option><option value="Department store">Department store</option><option value="Concept store">Concept store</option><option value="E-commerce">E-commerce</option><option value="Other">Other</option>          </select>        </div>        <label class="consent">
+          <input type="checkbox" name="privacy" required>
+          <span>I have read the <a class="u-link" href="../../en/privacy-policy/index.html">Privacy Policy</a> and consent to the processing of my personal data.</span>
+        </label>
+        <div class="form__submit"><button class="btn" type="submit">Send request</button></div>
+      </form>
+    </div>
   </div>
 </section>
 </main>
@@ -147,7 +155,7 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <a href="../../en/women/index.html">WOMEN</a>
     <a href="../../en/ss26-campaign/index.html">SS26 CAMPAIGN</a>
     <a href="../../en/brand/index.html">MARONE WORLD</a>
-    <a href="../../en/store-locator/index.html">RETAILERS</a>
+    <a href="../../en/store-locator/index.html">STORE LOCATOR</a>
     <a href="../../en/media/index.html">MEDIA</a>
     <a href="../../en/become-a-retailer/index.html">BECOME A RETAILER</a>
     <a href="../../en/contact/index.html">CONTACT</a>

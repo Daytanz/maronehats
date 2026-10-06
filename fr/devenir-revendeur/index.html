@@ -49,12 +49,6 @@
           <path d="M3 6.4l9 6.4 9-6.4"/>
         </svg>
       </a>
-      <a class="ico" href="../../fr/connexion/index.html" aria-label="CONNEXION" title="CONNEXION">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="8" r="3.9"/>
-          <path d="M4.4 20.2c.8-4 3.9-6.1 7.6-6.1s6.8 2.1 7.6 6.1"/>
-        </svg>
-      </a>
       <div class="lang" data-open="false">
         <button class="lang__btn label" type="button" aria-expanded="false" aria-haspopup="true">FR</button>
         <div class="lang__list label">          <a href="../../diventa-rivenditore/index.html" lang="it">Italiano</a>          <a href="../../en/become-a-retailer/index.html" lang="en">English</a>          <a href="../../fr/devenir-revendeur/index.html" lang="fr" aria-current="true">Français</a>          <a href="../../de/retailer/index.html" lang="de">Deutsch</a>          <a href="../../es/hazte-distribuidor/index.html" lang="es">Español</a>          <a href="../../ja/retailer/index.html" lang="ja">日本語</a>        </div>
@@ -67,11 +61,11 @@
     <a href="../../fr/femme/index.html">FEMME</a>
     <a href="../../fr/campagne-ss26/index.html">CAMPAGNE SS26</a>
     <a href="../../fr/brand/index.html">MARONE WORLD</a>
-    <a href="../../fr/store-locator/index.html">REVENDEURS</a>
+    <a href="../../fr/store-locator/index.html">STORE LOCATOR</a>
+    <a href="../../fr/connexion/index.html">B2B / COLLECTIONS</a>
     <a class="only-m" href="../../fr/devenir-revendeur/index.html">DEVENIR REVENDEUR</a>
     <a class="only-m" href="../../fr/media/index.html">MÉDIA</a>
     <a class="only-m" href="../../fr/contact/index.html">CONTACT</a>
-    <a class="only-m" href="../../fr/connexion/index.html">CONNEXION</a>
     </nav>
   </div>
 </header>
@@ -80,27 +74,15 @@
   <ol>    <li><a class="u-link" href="../../fr/index.html">Accueil</a></li>    <li><span aria-current="page">Devenir revendeur</span></li>  </ol>
 </nav>
 <main id="main">
-<section class="sect" style="padding-top:clamp(56px,9vh,120px)">
-  <div class="wrap stack js-reveal">
-    <h1 class="d-xl it">Devenir revendeur</h1>
-    <div class="read center prose"><p>Proposez dans votre point de vente des chapeaux et casquettes conçus et réalisés entièrement dans les Pouilles avec des matières précieuses et un soin sartorial du détail. Nous construirons ensemble un projet de collaboration sur mesure. Découvrez dès maintenant comment accéder au programme revendeurs.</p></div>
-    <p class="label" style="margin-top:18px">E-mail</p>
-    <p class="d-m"><a class="u-link" href="mailto:info@maronehats.it">info@maronehats.it</a></p>
-    <div class="read center prose"><p>ENVOYEZ VOTRE DEMANDE</p></div>
-    <p class="label" style="margin-top:18px">HORAIRES DE CONTACT</p>
-    <div class="read center prose"><p>Du lundi au vendredi, 08:00-18:00<br>(Heure de Rome)</p></div>
-  </div>
-</section>
-
-<section class="panel" id="devenir-revendeur" data-panel="Devenir revendeur">
+<section class="panel panel--short" data-panel="Devenir revendeur">
   <div class="panel__sticky">
     <div class="panel__media"><picture>  <source type="image/webp" srcset="../../img/rivenditore-cta-480.webp 480w, ../../img/rivenditore-cta-768.webp 768w, ../../img/rivenditore-cta-1080.webp 1080w, ../../img/rivenditore-cta-1440.webp 1440w, ../../img/rivenditore-cta-1920.webp 1920w" sizes="100vw">
   <img src="../../img/rivenditore-cta-1080.webp" srcset="../../img/rivenditore-cta-768.jpg 768w, ../../img/rivenditore-cta-1440.jpg 1440w" sizes="100vw"
        alt="Chapeau en feutre avec plume de la collection Marone" width="12500" height="4284"
-style="--pos:50% 55%"loading="lazy" decoding="async">
+style="--pos:50% 55%"fetchpriority="high" decoding="async">
 </picture></div>
     <div class="panel__content">
-      <h2 class="d-xl it">Devenir revendeur</h2>
+      <h1 class="d-xl it">Devenir revendeur</h1>
       <p class="label label-lg">ENVOYEZ VOTRE DEMANDE</p>
     </div>
   </div>
@@ -111,27 +93,53 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <div class="sect__head js-reveal">
       <h2 class="d-m">Entrez dans le monde de l&#39;excellence artisanale italienne avec les chapeaux Marone.</h2>
     </div>
-    <div class="read-wide center prose js-reveal js-reveal--d1" style="margin-bottom:clamp(34px,5vw,64px)">
+    <div class="read-wide center prose js-reveal js-reveal--d1">
       <p>Proposez dans votre point de vente des chapeaux et casquettes conçus et réalisés entièrement dans les Pouilles avec des matières précieuses et un soin sartorial du détail. Nous construirons ensemble un projet de collaboration sur mesure. Découvrez dès maintenant comment accéder au programme revendeurs.</p>
     </div>
+  </div>
+</section>
 
-    <form class="form js-reveal js-reveal--d2" action="/mail-retailer.php" method="post">
-      <input type="hidden" name="lang" value="fr">
-      <p style="display:none" aria-hidden="true"><label>Laisser vide<input name="website" tabindex="-1" autocomplete="off"></label></p>      <div class="field">
-        <label for="f-nome">Prénom *</label>        <input id="f-nome" name="nome" type="text" required autocomplete="given-name">      </div>      <div class="field">
-        <label for="f-indirizzo">Adresse (rue, n°, code postal, ville) *</label>        <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">      </div>      <div class="field">
-        <label for="f-cognome">Nom *</label>        <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">      </div>      <div class="field">
-        <label for="f-paese">Pays *</label>        <input id="f-paese" name="paese" type="text" required autocomplete="country-name">      </div>      <div class="field">
-        <label for="f-email">E-mail *</label>        <input id="f-email" name="email" type="email" required autocomplete="email">      </div>      <div class="field">
-        <label for="f-negozio">Nom du point de vente *</label>        <input id="f-negozio" name="negozio" type="text" required autocomplete="organization">      </div>      <div class="field">
-        <label for="f-telefono">Téléphone</label>        <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">      </div>      <div class="field">
-        <label for="f-tipo">Type de magasin *</label>        <select id="f-tipo" name="tipo" required>
-          <option value="">Sélectionnez une option</option><option value="Chapellerie">Chapellerie</option><option value="Boutique">Boutique</option><option value="Grand magasin">Grand magasin</option><option value="Concept store">Concept store</option><option value="E-commerce">E-commerce</option><option value="Autre">Autre</option>        </select>      </div>      <label class="consent">
-        <input type="checkbox" name="privacy" required>
-        <span>J&#39;ai lu la <a class="u-link" href="../../fr/politique-de-confidentialite/index.html">Politique de confidentialité</a> et je consens au traitement de mes données personnelles.</span>
-      </label>
-      <div class="form__submit"><button class="btn" type="submit">Envoyer la demande</button></div>
-    </form>
+<section class="sect--tight ret">
+  <div class="wrap ret__grid">
+    <aside class="ret__aside js-reveal">
+      <p class="label">Pourquoi Marone</p>
+      <ol class="why">        <li>
+          <h3 class="d-s">Fait main dans les Pouilles</h3>
+          <p>Chaque chapeau naît dans notre atelier de Foggia, avec des matières sélectionnées et des gestes transmis depuis 1881.</p>
+        </li>        <li>
+          <h3 class="d-s">Des collections adaptées à votre boutique</h3>
+          <p>Homme et femme, paille, tissu et feutre : nous construisons ensemble un assortiment cohérent avec votre clientèle.</p>
+        </li>        <li>
+          <h3 class="d-s">Un interlocuteur dédié</h3>
+          <p>Du premier contact aux livraisons, une seule personne vous accompagne à chaque étape de la collaboration.</p>
+        </li>      </ol>
+      <div class="ret__contact">
+        <p class="label">VOUS PRÉFÉREZ NOUS ÉCRIRE ?</p>
+        <p><a class="u-link" href="mailto:info@maronehats.it">info@maronehats.it</a></p>
+        <p class="label" style="margin-top:14px">HORAIRES DE CONTACT</p>
+        <p>Du lundi au vendredi, 08:00-18:00<br>(Heure de Rome)</p>
+      </div>
+    </aside>
+
+    <div class="ret__form js-reveal js-reveal--d1">
+      <p class="label ret__kicker">FORMULAIRE DE DEMANDE</p>
+      <form class="form form--card" action="/mail-retailer.php" method="post">
+        <input type="hidden" name="lang" value="fr">
+        <p style="display:none" aria-hidden="true"><label>Laisser vide<input name="website_url" tabindex="-1" autocomplete="off"></label></p>        <div class="field">
+          <label for="f-nome">Prénom *</label>          <input id="f-nome" name="nome" type="text" required autocomplete="given-name">        </div>        <div class="field">
+          <label for="f-indirizzo">Adresse complète (rue, code postal, ville, pays) *</label>          <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">        </div>        <div class="field">
+          <label for="f-cognome">Nom *</label>          <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">        </div>        <div class="field">
+          <label for="f-email">E-mail *</label>          <input id="f-email" name="email" type="email" required autocomplete="email">        </div>        <div class="field">
+          <label for="f-nome_negozio">Nom du point de vente *</label>          <input id="f-nome_negozio" name="nome_negozio" type="text" required autocomplete="organization">        </div>        <div class="field">
+          <label for="f-telefono">Téléphone *</label>          <input id="f-telefono" name="telefono" type="tel" required autocomplete="tel">        </div>        <div class="field">
+          <label for="f-tipo_negozio">Type de magasin *</label>          <select id="f-tipo_negozio" name="tipo_negozio" required>
+            <option value="">Sélectionnez une option</option><option value="Chapellerie">Chapellerie</option><option value="Boutique">Boutique</option><option value="Grand magasin">Grand magasin</option><option value="Concept store">Concept store</option><option value="E-commerce">E-commerce</option><option value="Autre">Autre</option>          </select>        </div>        <label class="consent">
+          <input type="checkbox" name="privacy" required>
+          <span>J&#39;ai lu la <a class="u-link" href="../../fr/politique-de-confidentialite/index.html">Politique de confidentialité</a> et je consens au traitement de mes données personnelles.</span>
+        </label>
+        <div class="form__submit"><button class="btn" type="submit">Envoyer la demande</button></div>
+      </form>
+    </div>
   </div>
 </section>
 </main>
@@ -147,7 +155,7 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <a href="../../fr/femme/index.html">FEMME</a>
     <a href="../../fr/campagne-ss26/index.html">CAMPAGNE SS26</a>
     <a href="../../fr/brand/index.html">MARONE WORLD</a>
-    <a href="../../fr/store-locator/index.html">REVENDEURS</a>
+    <a href="../../fr/store-locator/index.html">STORE LOCATOR</a>
     <a href="../../fr/media/index.html">MÉDIA</a>
     <a href="../../fr/devenir-revendeur/index.html">DEVENIR REVENDEUR</a>
     <a href="../../fr/contact/index.html">CONTACT</a>

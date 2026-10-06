@@ -49,12 +49,6 @@
           <path d="M3 6.4l9 6.4 9-6.4"/>
         </svg>
       </a>
-      <a class="ico" href="../../es/acceso/index.html" aria-label="ACCESO" title="ACCESO">
-        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-          <circle cx="12" cy="8" r="3.9"/>
-          <path d="M4.4 20.2c.8-4 3.9-6.1 7.6-6.1s6.8 2.1 7.6 6.1"/>
-        </svg>
-      </a>
       <div class="lang" data-open="false">
         <button class="lang__btn label" type="button" aria-expanded="false" aria-haspopup="true">ES</button>
         <div class="lang__list label">          <a href="../../contatti/index.html" lang="it">Italiano</a>          <a href="../../en/contact/index.html" lang="en">English</a>          <a href="../../fr/contact/index.html" lang="fr">Français</a>          <a href="../../de/contact/index.html" lang="de">Deutsch</a>          <a href="../../es/contacto/index.html" lang="es" aria-current="true">Español</a>          <a href="../../ja/contact/index.html" lang="ja">日本語</a>        </div>
@@ -67,11 +61,11 @@
     <a href="../../es/mujer/index.html">MUJER</a>
     <a href="../../es/campana-ss26/index.html">CAMPAÑA SS26</a>
     <a href="../../es/brand/index.html">MARONE WORLD</a>
-    <a href="../../es/store-locator/index.html">DISTRIBUIDORES</a>
+    <a href="../../es/store-locator/index.html">STORE LOCATOR</a>
+    <a href="../../es/acceso/index.html">B2B / COLECCIONES</a>
     <a class="only-m" href="../../es/hazte-distribuidor/index.html">HAZTE DISTRIBUIDOR</a>
     <a class="only-m" href="../../es/media/index.html">MEDIA</a>
     <a class="only-m" href="../../es/contacto/index.html">CONTACTO</a>
-    <a class="only-m" href="../../es/acceso/index.html">ACCESO</a>
     </nav>
   </div>
 </header>
@@ -117,15 +111,14 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
 
     <form class="form js-reveal js-reveal--d2" action="/mail-retailer.php" method="post">
       <input type="hidden" name="lang" value="es">
-      <p style="display:none" aria-hidden="true"><label>Dejar en blanco<input name="website" tabindex="-1" autocomplete="off"></label></p>      <div class="field">
+      <p style="display:none" aria-hidden="true"><label>Dejar en blanco<input name="website_url" tabindex="-1" autocomplete="off"></label></p>      <div class="field">
         <label for="f-nome">Nombre *</label>        <input id="f-nome" name="nome" type="text" required autocomplete="given-name">      </div>      <div class="field">
-        <label for="f-indirizzo">Dirección (calle, n.º, CP, ciudad) *</label>        <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">      </div>      <div class="field">
+        <label for="f-indirizzo">Dirección completa (calle, código postal, ciudad, país) *</label>        <input id="f-indirizzo" name="indirizzo" type="text" required autocomplete="street-address">      </div>      <div class="field">
         <label for="f-cognome">Apellidos *</label>        <input id="f-cognome" name="cognome" type="text" required autocomplete="family-name">      </div>      <div class="field">
-        <label for="f-paese">País *</label>        <input id="f-paese" name="paese" type="text" required autocomplete="country-name">      </div>      <div class="field">
         <label for="f-email">E-mail *</label>        <input id="f-email" name="email" type="email" required autocomplete="email">      </div>      <div class="field">
-        <label for="f-negozio">Nombre del punto de venta *</label>        <input id="f-negozio" name="negozio" type="text" required autocomplete="organization">      </div>      <div class="field">
-        <label for="f-telefono">Teléfono</label>        <input id="f-telefono" name="telefono" type="tel" autocomplete="tel">      </div>      <div class="field">
-        <label for="f-tipo">Tipo de tienda *</label>        <select id="f-tipo" name="tipo" required>
+        <label for="f-nome_negozio">Nombre del punto de venta *</label>        <input id="f-nome_negozio" name="nome_negozio" type="text" required autocomplete="organization">      </div>      <div class="field">
+        <label for="f-telefono">Teléfono *</label>        <input id="f-telefono" name="telefono" type="tel" required autocomplete="tel">      </div>      <div class="field">
+        <label for="f-tipo_negozio">Tipo de tienda *</label>        <select id="f-tipo_negozio" name="tipo_negozio" required>
           <option value="">Selecciona una opción</option><option value="Sombrerería">Sombrerería</option><option value="Boutique">Boutique</option><option value="Grandes almacenes">Grandes almacenes</option><option value="Concept store">Concept store</option><option value="E-commerce">E-commerce</option><option value="Otro">Otro</option>        </select>      </div>      <label class="consent">
         <input type="checkbox" name="privacy" required>
         <span>He leído la <a class="u-link" href="../../es/politica-de-privacidad/index.html">Política de privacidad</a> y consiento el tratamiento de mis datos personales.</span>
@@ -147,7 +140,7 @@ style="--pos:50% 55%"loading="lazy" decoding="async">
     <a href="../../es/mujer/index.html">MUJER</a>
     <a href="../../es/campana-ss26/index.html">CAMPAÑA SS26</a>
     <a href="../../es/brand/index.html">MARONE WORLD</a>
-    <a href="../../es/store-locator/index.html">DISTRIBUIDORES</a>
+    <a href="../../es/store-locator/index.html">STORE LOCATOR</a>
     <a href="../../es/media/index.html">MEDIA</a>
     <a href="../../es/hazte-distribuidor/index.html">HAZTE DISTRIBUIDOR</a>
     <a href="../../es/contacto/index.html">CONTACTO</a>
