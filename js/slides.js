@@ -11,11 +11,12 @@
 
   /* --------------------------------------------------------------------
      Dove è attivo lo slider.
-     Di default solo da desktop: su touch lo scroll-jacking litiga con il
-     gesto nativo del dito. Per attivarlo ovunque metti ONLY_DESKTOP = false.
+     Con mouse o trackpad, a qualunque larghezza di finestra. Su touch lo
+     scroll-jacking litiga con il gesto nativo del dito: lì si scorre normale.
+     Per attivarlo anche su touch metti ONLY_DESKTOP = false.
      -------------------------------------------------------------------- */
   const ONLY_DESKTOP = true;
-  if (ONLY_DESKTOP && !matchMedia("(min-width: 900px) and (pointer: fine)").matches) return;
+  if (ONLY_DESKTOP && !matchMedia("(pointer: fine)").matches) return;
 
   const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
   const DURATION = reduced ? 0 : 1000;   // ms

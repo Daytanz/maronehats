@@ -739,3 +739,72 @@ picture>source{display:none}
 
 /* senza JavaScript i blocchi a comparsa restano visibili */
 @media (scripting:none){.js-reveal{opacity:1;transform:none}}
+
+/* =========================================================================
+   OGNI BLOCCO = UNO SCHERMO
+   Le foto restano intere: si adattano loro al blocco, non il blocco a loro.
+   ========================================================================= */
+
+/* Uomo/Donna e Collezioni/Storia: due verticali affiancate anche su telefono */
+#uomo-donna .slide__inner,#collezioni .slide__inner{height:100svh;min-height:0;
+  padding:calc(var(--head-h) + 10px) 0 14px}
+#uomo-donna .fig img,#collezioni .fig img{max-height:calc(100svh - var(--head-h) - 124px)}
+#uomo-donna .fig,#collezioni .fig{min-width:0}
+@media (max-width:760px){
+  #uomo-donna .wrap,#collezioni .wrap{padding-inline:10px}
+  #uomo-donna .duo,#collezioni .duo{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  #uomo-donna figcaption .label,#collezioni figcaption .label{font-size:10px;letter-spacing:.1em}
+  #collezioni figcaption .d-s{font-size:18px}
+}
+
+/* Modelli Icona: con lo slider sta in uno schermo anche in finestra stretta */
+@media (max-width:760px){
+  .slides-on .slide--paper .wrap{padding-inline:10px}
+  .slides-on .slide--paper .trio{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;flex:0 1 auto}
+}
+
+/* Marone World: foto sopra e modulo sotto, dentro lo schermo */
+@media (max-width:860px){
+  .slide--split .panel__sticky{height:100svh;padding-top:var(--head-h);
+    grid-template-rows:minmax(0,1fr) auto}
+  .slide--split .panel__sticky>.panel__media,
+  .slides-on .slide--split .panel__sticky>.panel__media{height:100%;aspect-ratio:auto;min-height:0}
+  .slide--split .panel__sticky>.panel__content{padding:min(22px,2.6svh) 22px min(30px,3.4svh)}
+}
+
+/* testate di Storia, Modelli Icona e Contatti: di nuovo a schermo intero */
+.panel--whole:not(.panel--short) .panel__sticky{height:100svh;display:flex;flex-direction:column;
+  justify-content:center;padding-block:var(--head-h) 3svh;background:#0d0c0b}
+.panel--whole:not(.panel--short) .panel__media{flex:0 1 auto;min-height:0}
+.panel--whole:not(.panel--short) .panel__media img{max-height:calc(100svh - var(--head-h) - 3svh - 150px)}
+.panel--whole:not(.panel--short) .panel__content{color:#fff;width:100%;flex:none}
+/* spazio per l'entrata dal basso (38px): senza, la slide scorre dentro invece di cambiare */
+.slides-on #uomo-donna .slide__inner,.slides-on #collezioni .slide__inner{padding-bottom:40px}
+@media (min-width:761px){
+  html:not(.slides-on) #modelli-icona .slide__inner{padding-block:calc(var(--head-h) + 12px) 12px}
+  html:not(.slides-on) #modelli-icona .fig img{max-height:max(120px,calc(100svh - var(--head-h) - 200px))}
+}
+/* nello schermo, ma mai a spese del cappello */
+.panel--whole:not(.panel--short) .panel__media{display:flex;flex-direction:column}
+.panel--whole:not(.panel--short) .panel__media img{min-height:0;flex:0 1 auto}
+@media (max-width:860px){
+  .slide--split .panel__sticky>.panel__media,
+  .slides-on .slide--split .panel__sticky>.panel__media{max-height:130vw;align-self:center}
+}
+@media (max-width:860px) and (max-height:620px){
+  .slide--split .panel__media img{object-fit:contain}
+  .slide--split .nl__form{gap:7px;margin-top:6px}
+  .slide--split .nl .d-xl{font-size:24px}
+  .slide--split .nl__form input,.slide--split .nl__form .btn{padding-block:10px}
+  .slide--split .panel__sticky>.panel__content{padding-block:8px 12px}
+}
+@media (max-width:860px) and (max-height:470px){
+  .slide--split .nl__form>p{display:none}
+}
+@media (max-width:860px) and (min-width:540px) and (max-height:540px) and (orientation:landscape){
+  .slide--split .panel__sticky{grid-template-areas:"media content";grid-template-columns:1fr 1fr;grid-template-rows:100%}
+  .slide--split .panel__sticky>.panel__content{align-self:center}
+}
+@media (max-width:760px){
+  html:not(.slides-on) #collezioni .fig img{aspect-ratio:1520/2688;object-fit:contain}
+}
