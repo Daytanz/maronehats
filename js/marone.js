@@ -83,7 +83,7 @@
     }
   }
 
-  /* ---------- parallasse + dissolvenza pannelli (solo se manca view()) ---------- */
+  /* ---------- dissolvenza del testo nei pannelli (solo se manca view()) ---------- */
   const panels = $$(".panel__sticky");
   if (panels.length && !nativeTimeline && !reduced) {
     let raf = false;
@@ -94,9 +94,8 @@
         if (r.bottom < -vh * 0.5 || r.top > vh * 1.5) return;
         // 0 quando il pannello entra dal basso, 1 quando esce in alto
         const prog = Math.min(1, Math.max(0, (vh - r.top) / (vh + r.height)));
-        const img = p.querySelector(".panel__media img");
-        if (img) img.style.transform = `scale(1.14) translate3d(0, ${(prog - 0.5) * 6.4}%, 0)`;
-        const c = p.querySelector(".panel__content");
+        // i titoli fissi (slide, testate intere) non sfumano
+        const c = p.closest(".slide,.panel--inner,.panel--whole") ? null : p.querySelector(".panel__content");
         if (c) {
           const inn = Math.min(1, prog / 0.30);
           const out = Math.min(1, Math.max(0, (prog - 0.74) / 0.26));
