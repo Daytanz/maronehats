@@ -808,3 +808,11 @@ picture>source{display:none}
 @media (max-width:760px){
   html:not(.slides-on) #collezioni .fig img{aspect-ratio:1520/2688;object-fit:contain}
 }
+
+/* crediti sito */
+.ft__credit{display:inline-flex;align-items:center;gap:8px;margin-top:-10px;color:var(--ink-soft);
+  font-size:10px;letter-spacing:.2em;transition:color .3s var(--ease)}
+.ft__credit img{width:16px;height:16px;border-radius:3px}
+.ft__credit:hover{color:var(--ink)}
+@media (max-height:620px){.slide--end .ft{gap:20px}}
+@media (max-height:540px){.slide--end .ft{gap:14px}}
